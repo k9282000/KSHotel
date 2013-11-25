@@ -32,7 +32,7 @@
       <asp:Panel runat="server" ID="AddRom" HorizontalAlign="Center" Heignt="100px" Width="500px" GroupingText="新增訂房" Align="Center" >
      優惠方案:<asp:DropDownList  ID="benifit" runat="server" Height="20" Width="180" >
                         <asp:ListItem Text="父親節88折" Value="01" />
-                        <asp:ListItem Text="四人同行一人免費" Value="02" />                 
+                        <asp:ListItem Text="四人同行兩人免費" Value="02" />                 
              </asp:DropDownList><br/>
      
      開始時間: <asp:TextBox runat="server" ID="startTime" Width="180px"/><br/>
