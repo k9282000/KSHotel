@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+</head>
+
+<body  height="300px" width="1400px">
+   <form runat="server" ID="form1">
+        <asp:SiteMapDataSource ID="mySiteMap" runat="server"/>
+        <table width="1360"  align="center" style="border-right:violet thin dotted; border-top:violet thin dotted;
+                                                 border-left:violet thin dotted;border-bottom:violet thin dotted">
+        <tr>
+             <td align="center" colspan="2"  bgcolor="black" Height="80px">
+
+             
+
+
+               <h1 style="color:blue">
+                    <asp:Button Text="民宿管理" ID="housA1" runat="server" Height="40" Width="140" PostBackUrl="~/Home/index" Align="center"/>&nbsp
+                    <asp:Button Text="常客管理" ID="housA2" runat="server" Height="40" Width="140" PostBackUrl="~/Customer/CustomerM"/>&nbsp
+                    <asp:Button Text="營運分析" ID="housA3" runat="server" Height="40" Width="140" PostBackUrl="~/Analysis/OperationalAnalysis"/>&nbsp
+                    <asp:Button Text="優惠活動" ID="housA4" runat="server" Height="40" Width="140" PostBackUrl="~/Preferential/Preferential"/>&nbsp
+                    <asp:Button Text="收入管理" ID="housA5" runat="server" Height="40" Width="140" PostBackUrl="~/Income/IncomeM"/>&nbsp
+                    <asp:Button Text="系統設定" ID="housA6" runat="server" Height="40" Width="140" PostBackUrl="~/System/SystemSet"/>&nbsp
+                    <asp:DropDownList  ID="housA7" runat="server" Height="30" Width="140" >
+                      <asp:ListItem Text="哇沙米民宿" Value="哇沙米民宿" />
+                     
+                    </asp:DropDownList>
+
+               </h1>
+             </td> 
+        </tr>
+
+        <tr>
+
+            
+             <asp:ContentPlaceHolder runat="server" ID="Content1"/>
+       
+             
+
+             <td>
+              <asp:ContentPlaceHolder runat="server" ID="Content"  />
+             </td>
+        </tr>
+    
+        <tr>
+            <td align="center" colspan="2" style=""height="25px" bgcolor="black"></td>
+        </tr>
+         
+        </table>    
+   </form>
+</body>
+</html>
